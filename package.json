@@ -1,0 +1,41 @@
+{
+  "name": "find_your_recipe",
+  "version": "1.0.0",
+  "description": "Recipe searching app. Utilizing JavaScript/ES6, Ajax, and API's",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexBerezkin/Find_Your_Recipe.git"
+  },
+  "keywords": [
+    "recipe",
+    "food",
+    "drinks",
+    "cocktails",
+    "tasty"
+  ],
+  "author": "Alex Ber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexBerezkin/Find_Your_Recipe/issues"
+  },
+  "homepage": "https://github.com/AlexBerezkin/Find_Your_Recipe#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "babel-polyfill": "^6.26.0"
+  }
+}

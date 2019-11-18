@@ -13,7 +13,7 @@ export default class Search {
         //const YOUR_APP_KEY = 'db42dc3d82ed47e79ae07d9d7b7327b1';  //https://api.spoonacular.com
 
         //const APIPath = `https://www.food2fork.com/api/search?key=${key}&q=${query}`;
-        const APIPath = `https://api.edamam.com/search?q=${this.query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`;
+        const APIPath = `https://api.edamam.com/search?q=${this.query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=30`;
         //const APIPath = `https://api.spoonacular.com/recipes/search?query='pizza'&apiKey=${YOUR_APP_KEY}`;
         try {
             const res = await axios(APIPath);

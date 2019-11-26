@@ -31,7 +31,7 @@ const limitRecipeTitle = (title , limit = 17) => {
 const renderRecipe = recipe => {
     const markup = `
         <li>
-            <a class="results__link" href="#${recipe}">
+            <a class="results__link" href="#${recipe.id}">
                 <figure class="results__fig">
                     <img src="${recipe.recipe.image}" alt="${recipe.recipe.label}">
                 </figure>
@@ -73,6 +73,7 @@ const renderButtons = (page, numResults, resPerPage) => {
     elements.searchResPages.insertAdjacentHTML('afterbegin', button);
 };
 
+
 export const renderResults = (recipes, page = 1, resPerPage = 10) => {
     // render results of current page
     const begin = (page - 1) * resPerPage;
@@ -82,4 +83,23 @@ export const renderResults = (recipes, page = 1, resPerPage = 10) => {
 
     // render pagination buttons
     renderButtons(page, recipes.length, resPerPage);
+}
+
+export default class Recipe {
+    constructor(id) {
+        this.id = id;
+         
+    }
+    
+    getRecipe() {
+        console.log(recipe.recipe.label);
+        // this.title = result[id-1];
+        // this.author = state.recipe[id-1].recipe.publisher;
+        // this.img = state.recipe[id-1].recipe.image;
+        // this.url = state.recipe[id-1].recipe.url;
+        // this.ingredients = state.recipe[id-1].recipe.ingredients;
+        
+    }
+
+    
 }

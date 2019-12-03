@@ -100,6 +100,7 @@ export default class Recipe {
         // this.ingredients = state.recipe[id-1].recipe.ingredients;
         
     }
+    
 
     
 }
